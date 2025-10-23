@@ -5,54 +5,54 @@
 Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
+
 #include <iostream>
+
 #include <string>
+
+#include <locale.h>
+
 using namespace std;
-int main() {
-	setlocale(LC_ALL, "Portuguese");
-	int n;
-		char sai = 'n';
-	string Namoradas[5] = {};
-	string Apelidos[5] = {};
-	
-	for (int i = 0; i <5; ++i) {
-		cout << "escolhe uma namorada # " << i;
-		cin >> Namoradas[i];
-		cout << "escolhe um apelido #"<< i;
-		cin >> Apelidos[i];
-		
-	}
-	while (sai == 'n')
-	{
-		cout << "\n\nEscolhe o numero para saber o nome e o apelido da tua namorada: ";
-		cin >> n;
-		n = n - 1;
-		if (n >= 0 && n < 5)
-		{
-			cout << "\nA tua/teu namorada/o " << Namoradas[n] << " tem a alcunha " << Apelidos[n];
-		}
-		else if (n > 4)
-		{
-			cout << "\nNO :/";
 
-		}
-		else
-		{
-			cout << "\nNO";
-		}
-		cout << "\nquers sair (s/n)";
-		cin >> sai;
+int main()
 
-	}
+{
+
+    setlocale(LC_ALL, "Portuguese");
+
+    string nomes[5]={};
+
+    char resposta;
+
+    do
+
+    {
+
+    for (int i=0;i<5;i++)
+
+    {
+
+       cout << "fala o " <<i+1<< "º nome";
+
+        cin >> nomes[i];
+
+    }
+
+    for (int i=4;i>=0;i--)
+
+    {
+
+        cout<<nomes[i]<<endl;
+
+    }
+
+    cout << "deseja sair? (s/n)";
+
+    cin >> resposta;
+
+    }while (resposta!='s');
+
+    return 0;
+
 }
-
-	
-
-
-
-
-
-
-	
-	 
-
+ 
