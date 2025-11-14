@@ -21,7 +21,8 @@ int main() {
         cout << "Deseja continuar? (S/N): ";
         cin >> sair;
 
-    } while (sair == 'S' || sair == 'S');
+    } while (sair == 'S' || sair == 'N');
 
     return 0;
 }
+
