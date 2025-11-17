@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cctype>   // Para a funÁ„o tolower
+#include <cctype>   // Para a fun√ß√£o tolower
 using namespace std;
 
 int main() {
@@ -8,17 +8,22 @@ int main() {
     cout << "Digite uma letra (S ou N): ";
     cin >> opcao;
 	
-	opcao = tolower(opcao);// Converte para min˙sculo
+	opcao = tolower(opcao);// Converte para min√∫sculo bruno se tu tirares o tolower o c√≥digo n√£o funciona mais 
 
-    if (opcao == 's') {
-		cout << "VocÍ digitou S (mai˙sculo ou min˙sculo)!" << endl;// Corrigido para min˙sculo
+
+    if (opcao == 's') 
+	{
+		cout << "Voc√™ digitou S (mai√∫sculo ou min√∫sculo)!" << endl;// Corrigido para min√∫sculo
     }
-    else if (opcao == 'n') {
-		cout << "VocÍ digitou N (mai˙sculo ou min˙sculo)!" << endl;// Corrigido para min˙sculo
+    else if (opcao == 'n') 
+	{
+		cout << "Voc√™ digitou N (mai√∫sculo ou min√∫sculo)!" << endl;// Corrigido para min√∫sculo
     }
-    else {
-		cout << "VocÍ digitou outra coisa." << endl;// Mensagem para qualquer outra entrada
+    else 
+	{
+		cout << "Voc√™ digitou outra coisa." << endl;// Mensagem para qualquer outra entrada
     }
 
     return 0;
 }
+
